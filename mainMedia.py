@@ -8,7 +8,7 @@ def read_from_database():
     media_data = ClassMedia.Collection()
     for i in range(len(product_list)):
         data = product_list[i].split(',')
-        print(data)
+#         print(data)
         if data[0] == 'film':
             media_data.addProduct(ClassMedia.Film(data))
         elif data[0] == 'series':
